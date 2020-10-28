@@ -16,9 +16,65 @@
         }
     }
 }
-#welcome{
-    background: url(https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1880,h_960/https://demo.grixbase.com/helendo/wp-content/uploads/sites/4/2018/11/home-default-3.jpg);
+.line{
+    height: 3px;
+    width: 80px;
+    background: goldenrod;
+    margin: 20px 0;
+}
+#Welcome{
+    background: url(https://live.hasthemes.com/html/7/helendo-preview/helendo/assets/images/hero/home-default-1.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 } 
+.featured-product{
+    margin: 8em 0;
+}
+.all-product{
+    .pro-top{
+        margin-bottom: 5em;
+    }
+    .product-item{
+        &:hover{
+            .pro-img{
+                .pro-ico{
+                    opacity: 1;
+                }
+            }
+        }
+        .pro-img{
+            position: relative;
+            .pro-discount{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background: orange;
+                color: #fff;
+                padding: 5px;
+                z-index: 2;
+                
+            }
+            .pro-ico{
+                transition: opacity .3s ease-in-out;
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #ccc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    margin: 5px;
+                    padding: 15px;
+                    border-radius: 50%;
+                    background: white;
+                }
+            }
+        }
+    }
+
+}
